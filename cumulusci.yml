@@ -1,0 +1,26 @@
+minimum_cumulusci_version: '3.60.0'
+project:
+    name: gptestone
+    package:
+        name: gptestone
+        namespace: gptestone
+        api_version: '54.0'
+    git:
+        default_branch: 'main'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/gptestone/tests
+            options:
+                outputdir: robot/gptestone/results
+
+    robot_testdoc:
+        options:
+            path: robot/gptestone/tests
+            output: robot/gptestone/doc/gptestone_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
