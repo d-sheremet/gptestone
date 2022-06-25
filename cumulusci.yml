@@ -2,13 +2,14 @@ minimum_cumulusci_version: '3.60.0'
 project:
     name: gptestone
     package:
-        name: gptestone
+        name: Food-Bank
         namespace: gptestone
         api_version: '54.0'
     git:
         default_branch: 'main'
     source_format: sfdx
-
+#    dependencies:
+#        - github: 'https://github.com/SalesforceFoundation/NPSP'
 tasks:
     robot:
         options:
